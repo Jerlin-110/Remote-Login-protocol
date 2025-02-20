@@ -2,11 +2,11 @@
 Interpretation of the project :
 https://youtu.be/UE-pOjy_Uvg
 
-Project : 
+<ins>Project: </ins> 
 
 To enable a system administrator to access the shell of the server remotely, this protocol is proposed. Upon successful completion, provides the user with a remote shell.
 
-Working :
+<ins> Working : </ins> 
 
 Works with a fact that every organizations owns a website, that has a login for the employees. (Under an assumption, this website is strong)
 
@@ -19,11 +19,24 @@ Works with a fact that every organizations owns a website, that has a login for 
         6. And the server does the same and checks compatibility, if similar, offers a shell for the employee. 
         7. If not, terminated.
 
-Files involved :
+<ins> Files involved : </ins> 
 
 Backend  :  server.js, image.py, queries.sql, server.py
-
+<br>
 Frontend : login.html, downloadpic.html, script2.js, style1.css, client.py
 
 The tool that the employee uses to get the remote shell - client.py
+<br>
+Create an images folder where you store all the files.
+
+<ins> To get your node packages : </ins> 
+
+npm init --y
+<br>
+npm i express mysql
+<br>
+npm i nodemon dotenv --save-dev
+
+
+
 
