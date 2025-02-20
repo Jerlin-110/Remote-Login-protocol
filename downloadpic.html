@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Picture</title>
+    <script src="script2.js" defer></script>
+</head>
+<body>
+    <h1>The user ID is: <span id="userid">id</span></h1>
+    <h3 id="algonum">Algorithm Number: <span id="algo">Not fetched</span></h3>
+    <button id="download">Get Hash for Login</button>
+    <button id="getpic">Download Picture</button>
+
+    <script>
+        let id = localStorage.getItem("userId");
+        document
+            .getElementById('getpic')
+            .addEventListener('click', function () {
+                const link = document
+                    .createElement('a');
+                //link to the uploaded image
+                //  in your local storage
+                link
+                    .href = `./images/${id}.png`;
+                link
+                    .download = 'img.png';
+                document
+                    .body
+                    .appendChild(link);
+                link
+                    .click();
+                document
+                    .body
+                    .removeChild(link);
+            });
+    </script>
+
+</body>
+</html>
